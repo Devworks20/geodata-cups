@@ -1,0 +1,68 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="NoAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="android:listDivider">@color/white</item>
+        <item name="android:divider">@color/white</item>
+        <item name="actionBarDivider">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/normalColor</item>
+        <item name="android:statusBarColor">@color/normalColor</item>
+        <item name="colorPrimary">@color/mainColor</item>
+        <item name="colorAccent">@color/normalColor</item>
+        <item name="android:windowBackground">@android:color/white</item>
+
+        <!--<item name="android:navigationBarColor">@color/black</item>
+        <item name="navigationIconTint">@color/customize_gray_color2</item>-->
+
+        <item name="android:windowDisablePreview">true</item>
+
+    </style>
+
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:colorPrimary">@color/mainColor</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:colorAccent">@color/mainColor</item>
+        <item name="colorPrimaryDark">@color/mainColor</item>
+    </style>
+
+    <style name="date_picker_dialog_theme" parent="ThemeOverlay.AppCompat.Dialog">
+        <item name="colorAccent">@color/mainColor</item>                   <!--header background-->
+        <item name="android:windowBackground">@color/white</item>     <!--calendar background-->
+        <item name="android:colorControlActivated">@color/mainColor</item> <!--selected day-->
+        <item name="android:textColorPrimary">@color/black</item> <!--days of the month-->
+        <item name="android:textColorSecondary">@color/mainColor</item>    <!--days of the week-->
+    </style>
+
+
+    <style name="AppTheme.WhiteAccent">
+        <item name="colorAccent">#2888ac</item> <!-- Whatever color you want-->
+    </style>
+
+
+    <style name="CustomDialogTransparent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+</resources>

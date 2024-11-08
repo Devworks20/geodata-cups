@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.geodata.cups">
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".Backend.Tools.MyApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/main_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/main_icon"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:usesCleartextTraffic="true"
+        android:requestLegacyExternalStorage="true"
+        >
+
+        <activity
+            android:name=".Activity.FirstActivity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name=".Backend.Activity.AttachmentWebViewActivity"
+            />
+        <activity android:name=".Activity.LoginActivity"
+            />
+
+        <activity android:name=".Activity.ForgotPasswordActivity" />
+        <activity android:name=".Activity.ResetPasswordActivity" />
+        <activity android:name=".Activity.ChangePasswordActivity" />
+        <activity android:name=".Activity.MainActivity" />
+        <activity android:name=".Activity.SettingsActivity" />
+        <activity android:name=".Activity.NewReportActivity" />
+        <activity android:name=".Activity.WhatIsCupsActivity" />
+        <activity android:name=".Activity.TermsAndConditionsActivity" />
+        <activity android:name=".Activity.DataPrivacyPolicyActivity" />
+        <activity android:name=".Activity.RegistrationActivity" />
+        <activity android:name=".Backend.Activity.NewProgramsActivity" />
+        <activity android:name=".Backend.Activity.TempFileAttachActivity" />
+        <activity android:name=".Backend.Activity.TempFileViewActivity" />
+
+        <!-- Adding the Background Receiver Time Changed -->
+        <receiver
+            android:name=".Backend.Tools.BackgroundServicesReset"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="restartservice" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".Backend.Tools.TimeChangedReceiver"
+            android:enabled="true"
+            android:exported="true"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Adding the Background Service -->
+        <service android:name=".Backend.Tools.BackgroundServices" />
+
+    </application>
+
+</manifest>

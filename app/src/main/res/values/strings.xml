@@ -1,0 +1,69 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">CUPS</string>
+    <string name="forgot_password"><u>Forgot Password?</u> </string>
+    <string name="what_is_cups"><u>What is CUPS app?</u></string>
+
+    <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="take_photo"><u>TAKE PHOTO</u></string>
+    <string name="upload_photo"><u>UPLOAD PHOTO</u></string>
+    <string name="txt_return_to_login"><u>Return to login</u></string>
+
+
+    <string name="current_password">Current Password <font color='#FF0000'>*</font></string>
+    <string name="new_password">New Password <font color='#FF0000'>*</font></string>
+    <string name="re_enter_new_password">Re-enter Your New Password <font color='#FF0000'>*</font></string>
+    <string name="email_address_or_mobile_no">Email address or Mobile No. <font color='#FF0000'>*</font></string>
+
+    <string name="txt_commanders_ugnayan"><b>C</b>ommander\'s <b>U</b>gnayan</string>
+    <string name="txt_performance_scorecard"><b>P</b>erformace <b>S</b>corecard</string>
+
+    <string name="string_privacy">Please refer to Our</string>
+    <string name="string_data_privacy_policy_link"><u>Data Privacy Policy</u></string>
+    <string name="string_privacy_2">for further information about what information We Collect, how we use it and store it, and Your rights relation to it.</string>
+
+  <string name="string_email"><font color='#0000FF'><u>dpo@geosolutions.com.ph</u></font></string>
+
+    <string-array name="suffix_type">
+        <item />
+        <item>I</item>
+        <item>II</item>
+        <item>Jr</item>
+        <item>Sr</item>
+        <item>III</item>
+        <item>IV</item>
+        <item>V</item>
+        <item>VI</item>
+        <item>VII</item>
+        <item>VIII</item>
+        <item>IX</item>
+        <item>X</item>
+    </string-array>
+
+    <string-array name="rank_type">
+        <item>Option I</item>
+        <item>Option III</item>
+        <item>Option II</item>
+    </string-array>
+
+    <string-array name="police_district_type">
+        <item>Northern Police District</item>
+        <item>Eastern Police District</item>
+        <item>Manila Police District</item>
+        <item>Southern Police District</item>
+        <item> Quezon City Police District</item>
+    </string-array>
+
+    <string-array name="police_station_type">
+        <item>PS 01</item>
+        <item>PS 02</item>
+        <item>PS 03</item>
+        <item>PS 04</item>
+        <item>PS 05</item>
+        <item>PS 06</item>
+    </string-array>
+
+</resources>

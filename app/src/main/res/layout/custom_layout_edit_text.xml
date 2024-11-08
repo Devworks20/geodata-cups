@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <EditText
+        android:id="@+id/edt_custom"
+        android:padding="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:imeOptions="flagNoFullscreen"
+        tools:ignore="Autofill,LabelFor,TextFields"
+        android:background="@drawable/custom_background_line"
+        />
+</LinearLayout>

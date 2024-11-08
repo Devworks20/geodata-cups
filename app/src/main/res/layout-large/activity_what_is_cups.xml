@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/mainGray"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.WhatIsCupsActivity"
+    >
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        >
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_arrow_back_white_24dp"
+            android:layout_width="34dp"
+            android:layout_height="55dp"
+            app:tint="@color/mainColor"
+            />
+        <TextView
+            android:layout_marginStart="20dp"
+            android:text="What is CUPS app ?"
+            android:textSize="20sp"
+            android:gravity="start|center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            tools:ignore="HardcodedText"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mainGray"
+        android:visibility="visible"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:paddingStart="70dp"
+                android:paddingEnd="80dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ncr_po_seal_logo"
+                    app:civ_border_color="@android:color/white"
+                    app:civ_border_width="2dp"
+                    />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        android:textSize="28sp"
+                        android:text="@string/app_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="22sp"
+                        android:text="@string/txt_commanders_ugnayan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        />
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="22sp"
+                        android:text="@string/txt_performance_scorecard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:paddingStart="70dp"
+                android:paddingEnd="80dp"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="The Cups of Coffee/Tea Community Engagement Approach"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="HardcodedText"
+                    />
+                <TextView
+                    android:justificationMode="inter_word"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="CUPS of coffee or tea stimulate meaningful conversation and create good partnership"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="HardcodedText,UnusedAttribute"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:paddingStart="70dp"
+                android:paddingEnd="80dp"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:text="ONLY"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        />
+                    <TextView
+                        android:layout_marginStart="5dp"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:text="SEASONED POLICE OFFICERS"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="KNOW &amp; APPRECIATE THE VALUE OF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="HardcodedText"
+                    />
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="POLICE-BARANGAY PARTNERSHIPS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="HardcodedText"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:paddingStart="70dp"
+                android:paddingEnd="80dp"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:justificationMode="inter_word"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:text="Barangay is the cutting edge of basic services as the smallest unit of the government NCRPO 3-Phased Strategy to empower barangays."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="HardcodedText,UnusedAttribute"
+                    />
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:text="1. "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        />
+                    <TextView
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:text="Engaging the Barangays and its Leaders;"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:text="2. "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        />
+                    <TextView
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:text="Transforming the Leaders and its System; and"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:text="3. "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        />
+                    <TextView
+                        android:justificationMode="inter_word"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:text="Empowering the Leaders and the Barangay as a functional government unit."
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText,UnusedAttribute"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
